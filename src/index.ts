@@ -303,7 +303,7 @@ var mouseMin = -35, mouseMax = 45;
             return new BABYLON.Vector3(x, y, z);
     }
 
-    function setupPointerLock()
+   /* function setupPointerLock()
     {
         // register the callback when a pointerlock event occurs
         document.addEventListener('pointerlockchange', changeCallback, false);
@@ -332,13 +332,13 @@ var mouseMin = -35, mouseMax = 45;
             document['mozPointerLockElement'] === view ||
             document['webkitPointerLockElement'] === view
         ){
-            // we've got a pointerlock for our element, add a mouselistener
+            // we've got a pointerlock for our element, add a mouselistener*/
             document.addEventListener("mousemove", mouseMove, false);
-        } else {
+       // } else {
             // pointer lock is no longer active, remove the callback
-            document.removeEventListener("mousemove", mouseMove, false);
-        }
-    };
+         //   document.removeEventListener("mousemove", mouseMove, false);
+        //}
+    //};
 
 
     setupPointerLock();
