@@ -19,6 +19,7 @@ export class mobileUI {
             leftThumbContainer.horizontalAlignment = GUI.Control.HORIZONTAL_ALIGNMENT_LEFT;
             leftThumbContainer.verticalAlignment = GUI.Control.VERTICAL_ALIGNMENT_BOTTOM;
             leftThumbContainer.alpha = 0.4;
+            leftThumbContainer.isPointerBlocker = true;
     
         let leftInnerThumbContainer = makeThumbArea("leftInnterThumb", 4, "blue", null, null);
             leftInnerThumbContainer.height = "80px";
