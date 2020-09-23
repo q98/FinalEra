@@ -341,7 +341,7 @@ var mouseMin = -35, mouseMax = 45;
     //};
 
 
-    setupPointerLock();
+    //setupPointerLock();
     scene.detachControl();
 
     ground.checkCollisions = true;
