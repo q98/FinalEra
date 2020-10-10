@@ -4,10 +4,13 @@
         "module": "commonjs",
         "moduleResolution": "node",
         "sourceMap": false,
-        "watch": true
+        "watch": true,
+        "esModuleInterop": true
     },
      "types": [
         "babylonjs",
-        "babylonjs-gui"
+        "babylonjs-gui",
+        "socket.io",
+        "socket.io-client"
     ],
 }
