@@ -270,6 +270,9 @@ sock.on('connection', (socket) => {
    * Gets fired every time a player has moved! Then forward that message to everyone else!
    * @param data A JSON string that represents the x and y position of the player that moved. Needs to be parsed!
    */
+  socket.on('message', (data) => {
+  	console.log(data, + " " + socket.id)
+  })
   socket.on('moved', (data) => {
     data = JSON.parse(data);
     const room = rooms[socket.roomId];

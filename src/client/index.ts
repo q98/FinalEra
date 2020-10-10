@@ -53,6 +53,9 @@ derp.activateMobile();
 
 
 scene.onBeforeRenderObservable.add(function () {
+		if (xAddPos >= 10) {
+			sendMessageToServer(Math.round(xAddPos))
+		}
     console.log(xAddPos + "<x  :  y>" + yAddPos)
   });
 engine.runRenderLoop(() => {
